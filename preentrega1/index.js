@@ -1,5 +1,7 @@
-const ProductManager = require("./Products")
-const productManager = new ProductManager();
+const ProductManager = require("./Products");
+const productManager = new ProductManager("products.json");
+
+
 productManager.addProduct('Producto1', 'Descripción del producto 1', 10, '.jpg', '001', 100);
 productManager.addProduct('Producto2', 'Descripción del producto 2', 20, 'jpg', '002', 50);
 productManager.addProduct('Producto3', 'Descripción del producto 3', 30, 'jpg', '003', 200);
@@ -16,8 +18,6 @@ for (const product of productList) {
   console.log(`Stock: ${product.stock}`);
   console.log('---------------------');
 }
-
-
 
     
   
